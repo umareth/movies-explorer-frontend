@@ -1,0 +1,27 @@
+.main__wrap {
+  padding: 70px 10px; /* */
+}
+
+.main_movies {
+  padding: 0 10px; /* Замена*/
+}
+
+@media (min-width: 768px) {
+  .main__wrap {
+    padding: 90px 30px;
+  }
+
+  .main_movies {
+    padding: 0 30px; /* Замена*/
+  }
+}
+
+@media (min-width: 1280px) {
+  .main__wrap {
+    padding: 110px 70px;
+  }
+
+  .main_movies {
+    padding: 0 70px;
+  }
+}

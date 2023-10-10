@@ -1,0 +1,100 @@
+.movies__item {
+  cursor: pointer;
+}
+
+.movies__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movies__title {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 14px 0 11px 0;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 230px;
+}
+
+.movies__photo {
+  display: block;
+  width: 100%;
+}
+
+.movies__duration {
+  border-top: 1px solid #424242;
+  padding: 8px 0 18px 0;
+  line-height: 13px;
+  color: #8b8b8b;
+  margin: 16px 0 0 0;
+}
+
+.movies__button {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.movies__button_like {
+  background-image: url(../../../../images/unsave.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.movies__button_deleet {
+  background-image: url("../../../../images/delete.svg");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #313131;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.movies__button_like-active {
+  background-image: url(../../../../images/save1.svg);
+}
+
+@media (max-width: 519px) {
+  .movies__item {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 339px;
+  }
+  .movies {
+    margin-top: 40px;
+  }
+
+  .movies__title {
+    font-size: 12px;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 720px) {
+  .movies {
+    margin-top: 70px;
+  }
+  .movies__item {
+    justify-content: center;
+    width: 339px;
+  }
+
+  .movies__photo {
+    order: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .movies__item {
+    width: 270px;
+  }
+}
