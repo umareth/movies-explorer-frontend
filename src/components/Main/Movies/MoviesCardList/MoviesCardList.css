@@ -61,6 +61,7 @@
   .movies__card-list {
     margin-bottom: 10px;
     gap: 21px 20px;
+    width: 1140px;
   }
 
   .movies__button-more {

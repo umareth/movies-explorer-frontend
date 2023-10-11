@@ -7,7 +7,7 @@ const SavedMovies = () => {
   return (
     <Main className="main_movies">
       <SearchForm />
-      <MoviesCardList saved={true} moviesList={moviesList.slice(0, 4)} />
+      <MoviesCardList saved={true} moviesList={moviesList.slice(0, 3)} />
     </Main>
   );
 };
