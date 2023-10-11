@@ -70,6 +70,10 @@ button:focus-visible,
   border-radius: 5px;
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
 .main {
   flex: auto;
   display: flex;
