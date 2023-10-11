@@ -1,0 +1,142 @@
+.form_type_search {
+  padding: 80px 0 56px;
+  position: relative;
+  appearance: none;
+}
+
+.form_type_search::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #424242; /* Замена на конкретное значение */
+  left: 0;
+  bottom: 10px;
+}
+
+.form__button-save_type_search {
+  position: absolute;
+  right: 20px;
+  top: 99px;
+  line-height: 18px;
+  min-width: 59px;
+}
+
+.form__input_type_search {
+  padding: 25px 99px 25px 19px;
+  background: #222222; /* Замена на конкретное значение */
+  border-radius: 9px;
+  box-shadow: 0px 3px 14px 0px rgba(32, 32, 32, 0.08); /* Замена на конкретное значение */
+  color: #8b8b8b; /* Замена на конкретное значение */
+}
+
+.form__input_type_short {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  /* z-index: -1; */
+  appearance: none;
+  background-color: #343434; /* Замена на конкретное значение */
+  border-radius: 10px;
+  transition: background-color 0.6s;
+  cursor: pointer;
+}
+
+.form__label_type_short {
+  display: grid;
+  grid-template-columns: 36px 99px;
+  line-height: 18px;
+  align-items: center;
+  justify-content: center;
+  gap: 0 13px;
+  margin: 45px 0 0;
+}
+
+.form__input_type_short::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #a0a0a0; /* Замена на конкретное значение */
+  left: 0px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.6s;
+  border: 1px solid #fff;
+}
+
+.form__input_type_short:checked {
+  background-color: #343434; /* Замена на конкретное значение */
+}
+
+.form__input_type_short:checked::before {
+  background-color: #3ddc84; /* Замена на конкретное значение */
+  transform: translateX(16px);
+}
+
+.form__input_type_short:active,
+.form__input_type_short:active::before {
+  outline: none;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .form_type_search {
+    padding-bottom: 120px;
+  }
+
+  .form__input_type_search {
+    padding: 25px 307px 25px 63px;
+    background-image: url("../../../../images/search.svg"); /* Замена на конкретное значение */
+    background-repeat: no-repeat;
+    background-position: 19px center;
+    background-size: 34px 34px;
+  }
+
+  .form__button-save_type_search {
+    right: 227px;
+  }
+
+  .form__button-save_type_search::after {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    background-color: #505050; /* Замена на конкретное значение */
+    opacity: 1;
+  }
+
+  .form__label_type_short {
+    position: absolute;
+    right: 38px;
+    top: 106px;
+    font-size: 13px;
+    line-height: 18px; /* Замена на конкретное значение */
+    gap: 15px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form_type_search {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .form__input_type_search {
+    padding-right: 326px;
+  }
+
+  .form__button-save_type_search {
+    top: 89px;
+    right: 257px;
+  }
+
+  .form__label_type_short {
+    right: 47px;
+    top: 96px;
+  }
+}

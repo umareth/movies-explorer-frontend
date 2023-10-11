@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+@media (max-width: 879px) {
+  .navigation {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navigation {
+    gap: 14px;
+  }
+}
