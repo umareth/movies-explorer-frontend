@@ -32,6 +32,10 @@
   margin: 16px auto 40px;
 }
 
+.profile__button-exit:hover {
+  opacity: 0.8;
+}
+
 @media (min-width: 768px) {
   .profile {
     padding: 236px 30px 0;

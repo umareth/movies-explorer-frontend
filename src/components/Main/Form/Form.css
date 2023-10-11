@@ -78,7 +78,7 @@
   transition: 0.5s;
   min-height: 20px;
   padding: 0;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .form__error_visible {
@@ -108,6 +108,15 @@
   line-height: 15px;
 }
 
+.form__button-save_type_profile:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  .profile__button-exit {
+    margin: 16px auto 20px;
+  }
+}
 @media (min-width: 768px) {
   .form__button-save:not([disabled]):hover {
     opacity: 0.8;

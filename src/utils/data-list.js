@@ -55,7 +55,7 @@ const formLogin = {
       type: "password",
       name: "password",
       label: "Пароль",
-      placeholder: "",
+      placeholder: "Введите пароль",
       minLength: "4",
       maxLength: "40",
       required: true,

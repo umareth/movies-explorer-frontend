@@ -1,3 +1,8 @@
+.movies__card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .movies__item {
   cursor: pointer;
 }
@@ -61,6 +66,27 @@
 
 .movies__button_like-active {
   background-image: url(../../../../images/save1.svg);
+}
+
+@media (max-width: 1279px) {
+  .movies__card-list {
+    width: 1077px;
+  }
+}
+@media (max-width: 1136px) {
+  .movies__card-list {
+    width: 708px;
+  }
+}
+
+@media (max-width: 719px) {
+  .movies__card-list {
+    width: 300px;
+  }
+
+  .movies {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 519px) {

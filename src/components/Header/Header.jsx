@@ -19,7 +19,7 @@ const Header = ({ loggedIn }) => {
       classes.push("header_login");
     }
     if (pathname === "/") {
-      classes.push("header_cover");
+      classes.push("header_cover-blue");
     }
     if (pathAuth) {
       classes.push("header_auth");
@@ -39,7 +39,7 @@ const Header = ({ loggedIn }) => {
   return (
     <header className={classNameHeader()}>
       <Link className="header__link header__link_logo" to="/">
-        <img className="header__logo" src={logo} alt="HeaderLogo" />
+        <img className="header__logo" src={logo} alt="Логотип" />
       </Link>
       {!pathAuth &&
         (!loggedIn ? (

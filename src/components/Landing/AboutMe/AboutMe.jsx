@@ -20,7 +20,7 @@ const AboutMe = () => {
           </Link>
         </div>
 
-        <img className="aboutme__img" src={me} alt="AboutMePhoto" />
+        <img className="aboutme__img" src={me} alt="ФотоСтудента" />
       </div>
     </section>
   );

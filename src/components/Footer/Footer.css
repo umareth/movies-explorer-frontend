@@ -43,9 +43,13 @@
   margin: 0;
 }
 
+.footer__link:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 768px) {
   .footer {
-    padding: 97px 10px 20px;
+    padding: 80px 10px 20px;
   }
 }
 @media (min-width: 768px) {

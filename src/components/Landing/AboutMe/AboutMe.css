@@ -48,6 +48,16 @@
   text-decoration: none;
 }
 
+.aboutme__link:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .aboutme__wrapper {
+    align-items: center;
+  }
+}
+
 @media (min-width: 279px) {
   .aboutme__subtitle {
     font-size: 11px;

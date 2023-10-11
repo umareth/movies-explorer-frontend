@@ -57,6 +57,10 @@
   margin: 0;
 }
 
+.portfolio__item:hover {
+  opacity: 0.8;
+}
+
 @media (min-width: 768px) {
   .portfolio {
     padding: 0 50px 70px;

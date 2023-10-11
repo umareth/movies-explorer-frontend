@@ -41,7 +41,7 @@
   .error__subtitle {
     font-size: 16px;
     line-height: 19px;
-    margin: 5px 0 184px;
+    margin: 5px 0 auto;
   }
 
   .error__link {
