@@ -1,4 +1,4 @@
-export const BASE_URL = "https://api.shakh.nomoredomainsrocks.ru";
+export const BASE_URL = "https://api.shakheth.nomoredomainsrocks.ru";
 export const BASE_URL_API_MOVIES = "https://api.nomoreparties.co";
 export const REGX_NAME = /^[a-zA-Zа-яА-Я\s-]+$/;
 export const REGX_EMAIL = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
