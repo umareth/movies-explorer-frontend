@@ -41,7 +41,7 @@ const Header = () => {
   }, [pathname]);
 
   return (
-    <header className={pathname === "/" ? "header header_cover" : "header"}>
+    <header className="header">
       <div className={classNameHeaderContainer()}>
         <Link className="header__link header__link_logo" to={"/"}>
           <img className="header__logo" src={logo} alt="SaveMovie" />

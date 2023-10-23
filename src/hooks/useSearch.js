@@ -15,7 +15,7 @@ const useSearch = ({ movies, isSavedMoviesPage }) => {
   const [searchResultsStatus, setSearchResultsStatus] = useState({
     statusMessage: "",
     isLoading: false,
-    isFirstSearch: true,
+    isFirstSearch: false,
   });
 
   const { pathname } = useLocation();

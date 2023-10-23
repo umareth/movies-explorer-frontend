@@ -1,36 +1,27 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  flex: auto;
-}
-
-.main__container {
-  padding: 70px 0;
+.main__wrap {
+  padding: 70px 10px; /* */
 }
 
 .main_movies {
-  padding: 0;
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
+  padding: 0 10px; /* Замена*/
 }
 
 @media (min-width: 768px) {
-  .main__container {
-    padding: 90px 0;
+  .main__wrap {
+    padding: 90px 30px;
   }
 
   .main_movies {
-    padding: 0;
+    padding: 0 30px; /* Замена*/
   }
 }
 
 @media (min-width: 1280px) {
-  .main__container {
-    padding: 110px 0;
+  .main__wrap {
+    padding: 110px 70px;
   }
 
   .main_movies {
-    padding: 0;
+    padding: 0 70px;
   }
 }
