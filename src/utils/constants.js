@@ -1,7 +1,7 @@
 export const BASE_URL = "https://api.shakheth.nomoredomainsrocks.ru";
 export const BASE_URL_API_MOVIES = "https://api.nomoreparties.co";
-export const REGX_NAME = /^[a-zA-Zа-яА-Я\s-]+$/;
-export const REGX_EMAIL = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+export const REGX_NAME_INPUT = /^[a-zA-Zа-яА-Я\s-]+$/;
+export const REGX_MAIL_INPUT = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 export const KEY_MOVIES = "allMovies";
 export const KEY_SEARCH = "search";
