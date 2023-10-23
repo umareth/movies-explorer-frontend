@@ -17,14 +17,14 @@ import { apiMovies } from "../../utils/MoviesApi";
 import { useNavigate } from "react-router-dom";
 import { MessageContext } from "../../contexts/MessageContext";
 import { selectErrMessage, clearCookies } from "../../utils/utils";
-import { DEVICE_SETTING, KEYWORD_MOVIES, KEYWORD_RESIZE, MESSAGE } from "../../utils/constants";
+import { DEVICE_SETTINGS, KEY_MOVIES, KEY_RESIZE, MESSAGE } from "../../utils/constants";
 
 const App = () => {
   const [isLoadingContent, setIsLoadingContent] = useState(true);
   const [isSendRequest, setIsSendRequest] = useState(false);
   const [isErrorPage, setIsErrorPage] = useState(false);
 
-  const [device, setDevice] = useState(DEVICE_SETTING.desktop.device);
+  const [device, setDevice] = useState(DEVICE_SETTINGS.desktop.device);
   const [allMovies, setAllMovies] = useState([]);
   const [savedMovies, setSavedMovies] = useState([]);
   const { pathname } = useLocation();
@@ -46,8 +46,8 @@ const App = () => {
       checkToken();
       getAllMovies();
       getSaveMovies();
-      if (KEYWORD_MOVIES in localStorage) {
-        setAllMovies(JSON.parse(localStorage.getItem(KEYWORD_MOVIES)));
+      if (KEY_MOVIES in localStorage) {
+        setAllMovies(JSON.parse(localStorage.getItem(KEY_MOVIES)));
       }
     }
     setTimeout(() => {
@@ -57,11 +57,11 @@ const App = () => {
 
   useEffect(() => {
     updateDeviceOnResize();
-    window.addEventListener(KEYWORD_RESIZE, updateDeviceOnResize);
+    window.addEventListener(KEY_RESIZE, updateDeviceOnResize);
 
     return () => {
       clearTimeout(resizeCooldown.current);
-      window.removeEventListener(KEYWORD_RESIZE, updateDeviceOnResize);
+      window.removeEventListener(KEY_RESIZE, updateDeviceOnResize);
     };
   }, [device]);
 
@@ -175,14 +175,14 @@ const App = () => {
     clearTimeout(resizeCooldown.current);
     resizeCooldown.current = setTimeout(() => {
       switch (true) {
-        case window.innerWidth < DEVICE_SETTING.mobile.maxSize:
-          setDevice(DEVICE_SETTING.mobile.device);
+        case window.innerWidth < DEVICE_SETTINGS.mobile.maxSize:
+          setDevice(DEVICE_SETTINGS.mobile.device);
           break;
-        case window.innerWidth < DEVICE_SETTING.tablet.maxSize:
-          setDevice(DEVICE_SETTING.tablet.device);
+        case window.innerWidth < DEVICE_SETTINGS.tablet.maxSize:
+          setDevice(DEVICE_SETTINGS.tablet.device);
           break;
         default:
-          setDevice(DEVICE_SETTING.desktop.device);
+          setDevice(DEVICE_SETTINGS.desktop.device);
       }
     }, 500);
   };

@@ -2,25 +2,12 @@ export const BASE_URL = "https://api.shakh.nomoredomainsrocks.ru";
 export const BASE_URL_API_MOVIES = "https://api.nomoreparties.co";
 export const REGX_NAME = /^[a-zA-Zа-яА-Я\s-]+$/;
 export const REGX_EMAIL = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-export const KEYWORD_SEARCH = "search";
-export const KEYWORD_RESIZE = "resize";
-export const DATA_SAVE = "search";
-export const KEYWORD_MOVIES = "allMovies";
 
-export const ROUTS = {
-  mainPath: "/",
-  moviesPath: "/movies",
-  savedMoviesPath: "/saved-movies",
-  loginPath: "/signin",
-  registerPath: "/signup",
-  logoutPath: "/signout",
-  profilePath: "/profile",
-  userPath: "/users/me",
-  anyOtherPath: "*",
-  beatfilm: "beatfilm-movies",
-};
+export const KEY_MOVIES = "allMovies";
+export const KEY_SEARCH = "search";
+export const KEY_RESIZE = "resize";
 
-export const DEVICE_SETTING = {
+export const DEVICE_SETTINGS = {
   mobile: {
     device: "mobile",
     maxSize: 768,
