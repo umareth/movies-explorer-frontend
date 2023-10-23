@@ -52,4 +52,5 @@ export const MESSAGE = {
   REGISTRATION_REDIRECT: "Регистрация успешно завершена. Перенаправление на страницу поиска фильмов.",
   VALIDATION_ERROR: "Неверный формат данных: ",
   SERVER_ERROR: "При запросе произошла ошибка.",
+  INVALID_LOGIN: "Неверный пароль или логин",
 };

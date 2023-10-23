@@ -115,6 +115,14 @@
   opacity: 0.8;
 }
 
+.form__message {
+  text-align: center;
+}
+
+.form__message_error {
+  color: #ee3465;
+}
+
 @media (max-width: 500px) {
   .profile__button-exit {
     margin: 16px auto 20px;

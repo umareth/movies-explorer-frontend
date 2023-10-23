@@ -121,9 +121,8 @@ const App = () => {
       setCurrentUser({ ...currentUser, isLoggedIn: true });
     } catch (err) {
       setIsFormActivated(true);
-      const errMessage = selectErrMessage(err);
       setTimeout(() => {
-        setMessage({ isMessageShow: true, isError: true, text: errMessage });
+        setMessage({ isMessageShow: true, isError: true, text: MESSAGE.INVALID_LOGIN });
       }, 500);
     } finally {
       setTimeout(() => {
