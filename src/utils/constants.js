@@ -17,7 +17,7 @@ export const DEVICE_SETTINGS = {
   },
   tablet: {
     device: "tablet",
-    maxSize: 1024,
+    maxSize: 1137,
     maxMovies: 8,
     moreMovies: 2,
   },
