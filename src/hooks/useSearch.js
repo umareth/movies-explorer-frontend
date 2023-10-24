@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { KEY_SEARCH, MESSAGE } from "../utils/constants";
+import { SHORT_TIME, KEY_SEARCH, MESSAGE } from "../utils/constants";
 import { useLocation } from "react-router-dom";
 
 const useSearch = ({ movies, isSavedMoviesPage }) => {
@@ -25,7 +25,7 @@ const useSearch = ({ movies, isSavedMoviesPage }) => {
   };
 
   const filterMoviesByDuration = (moviesList) => {
-    return moviesList.filter((movie) => movie.duration <= 50);
+    return moviesList.filter((movie) => movie.duration <= SHORT_TIME);
   };
 
   const filterMoviesBySearchValue = (value) => {
