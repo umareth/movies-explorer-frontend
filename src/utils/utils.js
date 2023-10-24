@@ -164,21 +164,4 @@ const searchForm = {
   ],
 };
 
-const deviceSettings = {
-  mobile: {
-    maxSize: 768,
-    maxMovies: 5,
-    moreMovies: 2,
-  },
-  tablet: {
-    maxSize: 1024,
-    maxMovies: 4,
-    moreMovies: 3,
-  },
-  desktop: {
-    maxMovies: 4,
-    moreMovies: 4,
-  },
-};
-
-export { registerForm, loginForm, searchForm, profileForm, deviceSettings };
+export { registerForm, loginForm, searchForm, profileForm };

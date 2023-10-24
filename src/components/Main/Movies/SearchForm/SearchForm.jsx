@@ -1,7 +1,7 @@
 import Form from "../../Form/Form";
 import Input from "../../Form/Input/Input";
-import { deviceSettings, searchForm } from "../../../../utils/utils";
-import { INPUT_TYPE_NAME } from "../../../../utils/constants";
+import { searchForm } from "../../../../utils/utils";
+import { INPUT_TYPE_NAME, DEVICE_SETTINGS } from "../../../../utils/constants";
 import "./SearchForm.css";
 
 const SearchForm = ({ isLoading, onSubmitSearch, isSavedMoviesPage, valueSerch, setValueSerch, searchResultsStatus, setMaxShowMovies, device, isErrorShow, isFormActivated }) => {
@@ -22,13 +22,13 @@ const SearchForm = ({ isLoading, onSubmitSearch, isSavedMoviesPage, valueSerch, 
       return;
     }
     onSubmitSearch({ ...valueSerch, [evt.target.name]: evt.target.checked });
-    !isSavedMoviesPage && setMaxShowMovies(deviceSettings[device].maxMovies);
+    !isSavedMoviesPage && setMaxShowMovies(DEVICE_SETTINGS[device].maxMovies);
   };
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
     onSubmitSearch(valueSerch);
-    !isSavedMoviesPage && setMaxShowMovies(deviceSettings[device].maxMovies);
+    !isSavedMoviesPage && setMaxShowMovies(DEVICE_SETTINGS[device].maxMovies);
   };
 
   return (

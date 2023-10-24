@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Main from "../Main";
 import useSearch from "../../../hooks/useSearch";
 import Preloader from "../../Preloader/Preloader";
-import { deviceSettings } from "../../../utils/utils";
+import { DEVICE_SETTINGS } from "../../../utils/constants";
 
 const Movies = ({ movies, onMovieLike, savedMovies, device, setMessage }) => {
   const { filteredMoviesList, searchOptions, searchResultsStatus, handleSubmitSearch } = useSearch({
@@ -36,8 +36,8 @@ const Movies = ({ movies, onMovieLike, savedMovies, device, setMessage }) => {
   }, []);
 
   useEffect(() => {
-    setMaxShowMovies(deviceSettings[device].maxMovies);
-    setMoreMovies(deviceSettings[device].moreMovies);
+    setMaxShowMovies(DEVICE_SETTINGS[device].maxMovies);
+    setMoreMovies(DEVICE_SETTINGS[device].moreMovies);
   }, [device, movies]);
 
   useEffect(() => {

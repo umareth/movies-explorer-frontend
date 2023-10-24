@@ -6,6 +6,7 @@ export const REGX_MAIL_INPUT = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
 export const KEY_MOVIES = "allMovies";
 export const KEY_SEARCH = "search";
 export const KEY_RESIZE = "resize";
+export const SHORT_TIME = 40;
 
 export const DEVICE_SETTINGS = {
   mobile: {
@@ -17,8 +18,8 @@ export const DEVICE_SETTINGS = {
   tablet: {
     device: "tablet",
     maxSize: 1024,
-    maxMovies: 4,
-    moreMovies: 3,
+    maxMovies: 8,
+    moreMovies: 2,
   },
   desktop: {
     device: "desktop",
