@@ -80,11 +80,6 @@
 
 @media (max-width: 1279px) {
   .movies__card-list {
-    width: 1077px;
-  }
-}
-@media (max-width: 1136px) {
-  .movies__card-list {
     width: 708px;
   }
 }

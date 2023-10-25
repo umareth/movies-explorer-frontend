@@ -17,13 +17,13 @@ export const DEVICE_SETTINGS = {
   },
   tablet: {
     device: "tablet",
-    maxSize: 1137,
+    maxSize: 1280,
     maxMovies: 8,
     moreMovies: 2,
   },
   desktop: {
     device: "desktop",
-    maxMovies: 4,
+    maxMovies: 16,
     moreMovies: 4,
   },
 };
