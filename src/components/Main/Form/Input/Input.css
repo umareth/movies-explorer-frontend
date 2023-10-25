@@ -1,0 +1,139 @@
+.form__input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  appearance: none;
+  font-size: 14px;
+  line-height: 22px;
+  transition: 0.9s opacity ease-in-out;
+}
+
+.form:not([novalidate]) .form__input:invalid {
+  color: #ee3465;
+}
+
+.form__input::placeholder {
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8b8b8b;
+  background-color: transparent;
+}
+
+.form__input:disabled,
+.form__input::placeholder:disabled {
+  color: red;
+  outline-color: red;
+}
+
+.form__input:disabled:hover {
+  opacity: 1;
+  cursor: default;
+}
+
+.form__input_type_error {
+  color: #ee3465;
+  outline: 1px solid #ee3465;
+}
+
+.form__error {
+  min-height: 14px;
+  font-size: 10px;
+  line-height: 13px;
+  transition: 0.5s;
+  margin: auto 0 20px;
+  padding: 0;
+  text-align: center;
+}
+
+.form__label_type_register,
+.form__label_type_login {
+  color: #8b8b8b;
+  line-height: 12px;
+}
+
+.form__input_type_register,
+.form__input_type_login {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #2f2f2f;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.form__input_type_register::placeholder,
+.form__input_type_login::placeholder {
+  color: #fff;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.form__error_register,
+.form__error_login {
+  display: block;
+  margin: 0;
+  min-height: 20px;
+  font-size: 10px;
+  line-height: 25px;
+  text-align: start;
+  color: #ee3465;
+}
+
+/* Profile */
+.form__label_type_profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  height: 13px;
+}
+
+.form__error_profile {
+  grid-column: span 2;
+}
+
+.form__input_type_profile {
+  padding: 0;
+  line-height: 13px;
+  font-size: 12px;
+  text-align: right;
+  background-color: #202020;
+  color: #fff;
+}
+
+.form__item_type_profile:first-child::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  bottom: -18px;
+  left: 0;
+  background-color: #424242;
+}
+
+.form__input_type_profile::placeholder {
+  opacity: 1;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: right;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .form__input_type_login::placeholder,
+  .form__input_type_register::placeholder {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 880px) {
+  .form__input:hover {
+    cursor: text;
+    opacity: 0.7;
+  }
+
+  .form__input_type_short:hover {
+    cursor: pointer;
+  }
+}
